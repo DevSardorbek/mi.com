@@ -1,0 +1,86 @@
+.future {
+  background: #f7f7f7;
+}
+.future__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 50px;
+}
+.title__arrow {
+  display: flex;
+  gap: 24px;
+}
+.arr__left {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(195, 191, 191);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arr__right {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(195, 191, 191);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future__cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.future__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.future_img {
+  border-radius: 6px;
+}
+.future__card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.future__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.future__desc {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 1;
+  width: 500px;
+}
+.future_btn {
+  padding: 6px 16px;
+  border-radius: 6px;
+  background-color: black;
+  color: #fff;
+  transition: 0.3s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.future_btn:hover {
+  background-color: rgb(68, 68, 67);
+}
+.future__card:hover .future_btn {
+  transform: translateY(-25px);
+  opacity: 1;
+}
+.future__card:hover .future__desc {
+  opacity: 0;
+}
